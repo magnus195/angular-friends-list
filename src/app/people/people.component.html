@@ -1,0 +1,4 @@
+@for (person of people; track person) {
+    <p>{{ person.name }}</p>
+    <button (click)="selectPerson(person)">{{ !person.favorite ? "Favourite" : "Unfavorite" }}</button>
+}

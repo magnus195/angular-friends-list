@@ -4,8 +4,8 @@
   <button (click)="addFriend()">Add friend</button>
 </div>
 <div class="favorite">
-  <p>My favorite person is: {{ favorite }}</p>
+  <p>My favorite people are: {{ listFavorites() }}</p>
 </div>
 <div class="people">
-  <!-- Add your people component here -->
+  <app-people [people]="people" (personSelected)="setFavorite($event)"></app-people>
 </div>
