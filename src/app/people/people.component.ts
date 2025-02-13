@@ -1,14 +1,11 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {of} from "rxjs";
-import {NgIf} from "@angular/common";
 import {Person} from "./person";
 
 @Component({
   selector: 'app-people',
   standalone: true,
-  imports: [
-    NgIf
-  ],
+  imports: [],
   templateUrl: './people.component.html',
   styleUrl: './people.component.css'
 })
